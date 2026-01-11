@@ -1,10 +1,48 @@
-# Default ignored files
-/shelf/
-/workspace.xml
-# Ignored default folder with query files
-/queries/
-# Datasource local storage ignored files
-/dataSources/
-/dataSources.local.xml
-# Editor-based HTTP Client requests
-/httpRequests/
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# --- Ambientes Virtuais (NUNCA suba isso) ---
+.venv/
+venv/
+ENV/
+env/
+.env
+
+# --- VS Code ---
+.vscode/
+
+# --- YOLO / Dados / Pesos ---
+# Ignorar datasets inteiros (são muito grandes)
+datasets/
+
+# Ignorar resultados de treino (logs, gráficos, checkpoints intermediários)
+runs/
+
+# Ignorar modelos pesados na raiz (para não estourar limite do GitHub)
+*.pt
+*.onnx
+
+# --- Exceções (Permitir subir apenas o modelo final na pasta correta) ---
+!models/
+!models/*.pt
